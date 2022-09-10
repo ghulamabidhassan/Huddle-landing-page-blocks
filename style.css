@@ -182,10 +182,6 @@ footer {
   color: white;
 }
 
-footer > * {
-  cursor: pointer;
-}
-
 #logo path {
   fill: white;
   scale: 0.7;
@@ -201,6 +197,8 @@ footer > * {
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: 0.7em;
+  cursor: pointer;
+  width: fit-content;
 }
 
 .info {
@@ -214,11 +212,13 @@ footer > * {
 .company-info p {
   margin: 0.8em 0;
   transition: 300ms ease-in-out;
+  width: fit-content;
 }
 
 .company-info p:hover {
   text-decoration: underline;
   text-underline-offset: 0.2em;
+  cursor: pointer;
 }
 
 .socials {
@@ -247,6 +247,7 @@ footer > * {
 #social:hover {
   fill: var(--Pink);
   border-color: var(--Pink);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 85.375em) {
