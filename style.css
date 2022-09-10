@@ -78,13 +78,17 @@ button {
 
 button:hover {
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 header .content {
   margin-top: 3em;
   padding: 0 1.2em;
   text-align: center;
+}
+
+header .content div:first-child > * {
+  margin-bottom: 1em;
 }
 
 header .content > * {
@@ -143,6 +147,7 @@ section img {
 
 .section .para {
   font-size: 0.85em;
+  color: var(--Grayish-Blue);
 }
 
 .community {
@@ -251,4 +256,158 @@ footer {
 }
 
 @media screen and (min-width: 85.375em) {
+  .bg-mob {
+    display: none;
+  }
+
+  .bg-desktop {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  nav {
+    padding: 2.5em 3.5em 0 3.5em;
+  }
+
+  nav .logo {
+    height: 2em;
+  }
+
+  nav .btn {
+    padding: 0.85em 4em;
+  }
+
+  header .content {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+  }
+
+  header .content div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2em;
+    text-align: left;
+  }
+
+  header .title {
+    width: 100%;
+    margin-bottom: 0.4em;
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+
+  header .para {
+    font-size: 1em;
+    margin-bottom: 1.4em;
+  }
+
+  .mockup {
+    margin: 0;
+    height: 24em;
+    width: auto;
+  }
+
+  header .content .free {
+    width: fit-content;
+    padding: 1em 3em;
+  }
+
+  .sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+  }
+
+  .section {
+    height: fit-content;
+    width: 85%;
+    display: grid;
+    padding: 3em;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section img {
+    height: 20em;
+    width: auto;
+    margin: 0;
+  }
+
+  .section div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2em;
+  }
+
+  .section p {
+    text-align: left;
+    color: var(--Grayish-Blue);
+    line-height: 1.6em;
+  }
+
+  .section:nth-child(1) div:nth-child(1) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .section:nth-child(3) div:nth-child(1) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .community {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1.8em 4.8em;
+  }
+
+  .community > * {
+    font-size: 1.4em;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 2.5em;
+  }
+
+  footer > * {
+    font-size: 0.9em;
+  }
+
+  .f-one {
+    padding-left: 4em;
+  }
+
+  .company-page {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .company-page > * {
+    padding: 0 2em;
+  }
+
+  .copyright {
+    position: absolute;
+    right: 12%;
+    bottom: 2em;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #social {
+    margin: 0;
+    scale: 0.7;
+  }
 }
