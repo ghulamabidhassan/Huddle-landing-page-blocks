@@ -255,6 +255,48 @@ footer {
   cursor: pointer;
 }
 
+@media screen and (max-width: 85.3em) and (min-width: 26.25em) {
+  nav {
+    padding: 4em;
+  }
+
+  nav .logo {
+    height: 2.55em;
+  }
+
+  .btn {
+    width: auto;
+    padding: 1em 3em;
+  }
+
+  header .content {
+    padding: 0 3em;
+  }
+
+  header .content div > * {
+    font-size: 1.5rem;
+  }
+
+  header .mockup {
+    height: 15em;
+    margin-bottom: 1.8em;
+  }
+
+  .free {
+    width: auto;
+  }
+
+  .section {
+    margin: 3em 6em;
+    font-size: 1.5rem;
+  }
+
+  .community {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 85.375em) {
   .bg-mob {
     display: none;
@@ -409,5 +451,41 @@ footer {
   #social {
     margin: 0;
     scale: 0.7;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  nav {
+    padding: 4em 4em 0 4em;
+  }
+
+  header {
+    height: auto;
+    font-size: 1.5rem;
+  }
+
+  header .content > .title {
+    padding: 0;
+  }
+
+  button {
+    width: auto;
+    font-size: 1.15rem;
+  }
+
+  header .content div:first-child > * {
+    margin-bottom: 0.6em;
+  }
+
+  .sections .section {
+    font-size: 1.6rem;
+  }
+
+  .community .content {
+    font-size: 1.6rem;
+  }
+
+  footer {
+    font-size: 1.3rem;
   }
 }
